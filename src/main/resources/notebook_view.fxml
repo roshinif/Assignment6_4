@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.NoteController">
+    <center>
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+            <Label text="Notebook" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+            <TextField fx:id="noteField" promptText="Enter your note here..." />
+            <Button text="Add Note" onAction="#addNote"/>
+            <ListView fx:id="noteList"/>
+        </VBox>
+    </center>
+</BorderPane>
